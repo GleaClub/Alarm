@@ -10,4 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIDatePicker *picker;
+- (IBAction)Set:(id)sender;
+-(void) localnotification:(NSDate *)inputdate;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segControl;
+
+
 @end

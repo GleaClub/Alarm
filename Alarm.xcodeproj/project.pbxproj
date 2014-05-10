@@ -21,6 +21,9 @@
 		DC427841191819480001D07E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC427823191819470001D07E /* UIKit.framework */; };
 		DC427849191819480001D07E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC427847191819480001D07E /* InfoPlist.strings */; };
 		DC42784B191819480001D07E /* AlarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC42784A191819480001D07E /* AlarmTests.m */; };
+		DC42785519186A820001D07E /* Tornado_Siren_II-Delilah-747233690.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC42785419186A820001D07E /* Tornado_Siren_II-Delilah-747233690.mp3 */; };
+		DC42785719186DB40001D07E /* alarmathclock.png in Resources */ = {isa = PBXBuildFile; fileRef = DC42785619186DB40001D07E /* alarmathclock.png */; };
+		DC42786019188F7A0001D07E /* ViewResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DC42785F19188F7A0001D07E /* ViewResult.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		DC427846191819480001D07E /* AlarmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlarmTests-Info.plist"; sourceTree = "<group>"; };
 		DC427848191819480001D07E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DC42784A191819480001D07E /* AlarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlarmTests.m; sourceTree = "<group>"; };
+		DC42785419186A820001D07E /* Tornado_Siren_II-Delilah-747233690.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Tornado_Siren_II-Delilah-747233690.mp3"; path = "../../../Tornado_Siren_II-Delilah-747233690.mp3"; sourceTree = "<group>"; };
+		DC42785619186DB40001D07E /* alarmathclock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alarmathclock.png; path = ../../../alarmathclock.png; sourceTree = "<group>"; };
+		DC42785E19188F7A0001D07E /* ViewResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewResult.h; sourceTree = "<group>"; };
+		DC42785F19188F7A0001D07E /* ViewResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewResult.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +122,8 @@
 				DC42782E191819470001D07E /* AppDelegate.h */,
 				DC42782F191819470001D07E /* AppDelegate.m */,
 				DC427831191819470001D07E /* Main.storyboard */,
+				DC42785E19188F7A0001D07E /* ViewResult.h */,
+				DC42785F19188F7A0001D07E /* ViewResult.m */,
 				DC427834191819470001D07E /* ViewController.h */,
 				DC427835191819470001D07E /* ViewController.m */,
 				DC427837191819470001D07E /* Images.xcassets */,
@@ -126,6 +135,8 @@
 		DC427826191819470001D07E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC42785619186DB40001D07E /* alarmathclock.png */,
+				DC42785419186A820001D07E /* Tornado_Siren_II-Delilah-747233690.mp3 */,
 				DC427827191819470001D07E /* Alarm-Info.plist */,
 				DC427828191819470001D07E /* InfoPlist.strings */,
 				DC42782B191819470001D07E /* main.m */,
@@ -199,6 +210,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
+					DC42781B191819470001D07E = {
+						DevelopmentTeam = 297PU2C4NE;
+					};
 					DC42783C191819480001D07E = {
 						TestTargetID = DC42781B191819470001D07E;
 					};
@@ -230,7 +244,9 @@
 			files = (
 				DC427838191819470001D07E /* Images.xcassets in Resources */,
 				DC42782A191819470001D07E /* InfoPlist.strings in Resources */,
+				DC42785519186A820001D07E /* Tornado_Siren_II-Delilah-747233690.mp3 in Resources */,
 				DC427833191819470001D07E /* Main.storyboard in Resources */,
+				DC42785719186DB40001D07E /* alarmathclock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC427836191819470001D07E /* ViewController.m in Sources */,
+				DC42786019188F7A0001D07E /* ViewResult.m in Sources */,
 				DC427830191819470001D07E /* AppDelegate.m in Sources */,
 				DC42782C191819470001D07E /* main.m in Sources */,
 			);
@@ -376,10 +393,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Alarm/Alarm-Prefix.pch";
 				INFOPLIST_FILE = "Alarm/Alarm-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -389,10 +409,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Alarm/Alarm-Prefix.pch";
 				INFOPLIST_FILE = "Alarm/Alarm-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
